@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkmisa_vuejs"]=self["webpackChunkmisa_vuejs"]||[]).push([[553],{1553:function(s,e,n){n.r(e),n.d(e,{default:function(){return o}});var t=n(3396);const u={class:"asset-page page-view"};function a(s,e,n,a,c,r){const i=(0,t.up)("ms-asset");return(0,t.wg)(),(0,t.iD)("div",u,[(0,t.Wm)(i)])}var c={components:{MsAsset:(0,t.RC)((()=>n.e(2).then(n.bind(n,7002))))},setup(){}},r=n(89);const i=(0,r.Z)(c,[["render",a]]);var o=i}}]);
+//# sourceMappingURL=553.9c7c2065.js.map

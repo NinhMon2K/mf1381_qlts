@@ -40,7 +40,7 @@ body {
         display: flex;
         flex: 1;
         flex-direction: column;
-         overflow: hidden;
+        overflow: hidden;
 
         .page-view {
           display: flex;
@@ -108,4 +108,94 @@ input[type="checkbox"],
 input[type="radio"] {
   width: 17px;
   height: 17px;
+}
+.ui-tooltip,
+.arrows:after {
+  background: #fff;
+  border: 2px solid #ccc;
+}
+
+.ui-tooltip {
+  padding: 10px 20px;
+  color: #000;
+  border-radius: 5px;
+  font: 500 12px "Helvetica Neue", Sans-Serif;
+  /*text-transform: uppercase;*/
+  box-shadow: 0 0 7px black;
+}
+
+.arrows {
+  width: 70px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -35px;
+  bottom: -16px;
+}
+
+.arrows.top {
+  top: -16px;
+  bottom: auto;
+}
+
+.arrows.left {
+  left: 20%;
+}
+
+.arrows:after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 6px 5px 9px -9px #ccc;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.arrows.top:after {
+  bottom: -20px;
+  top: auto;
+}
+.tooltip {
+  background-color: red;
+  color: #fff;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

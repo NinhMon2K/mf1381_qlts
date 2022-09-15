@@ -4,7 +4,7 @@
       {{ label ? label : "" }}
       <span v-if="hasInput">*</span>
     </label>
-    <div class="flex-row">
+    <div class="flex-row" :class="[leftIcon ? 'has-icon' : '']">
       <div class="iconFilter">
         <span
           :class="[
@@ -32,7 +32,7 @@
         v-if="rightIcon"
       ></div>
     </div>
-    <div class="error-message"></div>
+    <span class="error-message">{{message ? message : ''}}</span>
   </div>
 </template>
 <script>
@@ -50,6 +50,9 @@ export default defineComponent({
   props: {
     modelValue: {
       default: null,
+    },
+    configStyle: {
+      default: {},
     },
     placeholder: {
       default: null,
@@ -91,9 +94,14 @@ export default defineComponent({
       default: null,
       type: String,
     },
+    message:{
+      default: null,
+      type: String,
+    }
   },
   setup(props, { emit }) {
     const { proxy } = getCurrentInstance();
+
     return {};
   },
 });

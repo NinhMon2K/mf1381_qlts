@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  .error-message{
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+  }
   .text-label {
     display: flex;
     position: relative;
-    margin-bottom: 7px;
+    margin-bottom: 8px;
     color: #000;
     font-size: 13px;
     cursor: pointer;
@@ -26,7 +31,7 @@
   }
   &:hover {
     .flex-row {
-    //  border: solid 1px #1aa4c8;
+      //  border: solid 1px #1aa4c8;
     }
   }
   &:active {
@@ -36,7 +41,7 @@
   }
   &:focus {
     .flex-row {
-     // border: solid 1px #1aa4c8;
+      // border: solid 1px #1aa4c8;
       outline: #d1edf4 3px solid;
     }
   }
@@ -46,7 +51,6 @@
     background-color: #ffffff;
     border-radius: 2.5px;
     border: 1px solid #afafaf;
-    width: 180px;
     height: 35px;
     overflow: hidden;
     display: flex;
@@ -68,6 +72,7 @@
         position: absolute;
       }
     }
+   
     &:first-child {
     }
     .icon--left {
@@ -80,12 +85,18 @@
       border: none;
       outline: none;
       font-size: 13px;
-      padding-left: 36px;
+      padding-left: 10px;
       padding-right: 14px;
 
       &::placeholder {
         font-style: italic;
       }
+    }
+  }
+
+  .has-icon {
+    .input-text {
+      padding-left: 36px;
     }
   }
 }

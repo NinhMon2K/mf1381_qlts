@@ -59,7 +59,7 @@
                 </div>
               </div>
             </td>
-            <td style="font-size: 13px; font-weight: 700">13</td>
+            <td style="font-size: 13px; font-weight: 700"> {{  allData.length }}</td>
             <td style="font-size: 13px; font-weight: 700">249.000.000</td>
             <td style="font-size: 13px; font-weight: 700">19.716.000</td>
             <td style="font-size: 13px; font-weight: 700">229.284.000</td>
@@ -103,7 +103,15 @@ export default defineComponent({
     // }
   },
 
-  setup(props) {},
+  setup(props) {
+
+    const handleCost = (allData)=> {
+
+      let a = 0;
+      a = allData.columns
+      
+    }
+  },
 });
 </script>
 <style lang="scss" scoped>

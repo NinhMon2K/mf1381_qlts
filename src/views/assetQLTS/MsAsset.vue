@@ -25,7 +25,7 @@
 
       <ms-button leftIcon="ic-delete__toolbar" id="btn-delete" :radius="true">
       </ms-button>
-      <ms-popup-asset v-show="isShowPopup"></ms-popup-asset>
+      <ms-popup-asset titlePopup="Thêm mới" v-show="isShowPopup"></ms-popup-asset>
     </div>
   </div>
 
@@ -51,10 +51,9 @@ export default {
       console.log("ninh");
       this.isShowPopup = true;
     },
-    close(){
+    close() {
       this.isShowPopup = false;
-      
-    }
+    },
   },
   setup() {
     const { proxy } = getCurrentInstance();
@@ -383,8 +382,8 @@ export default {
   },
   data() {
     return {
-      isShowPopup:false,
-    }
+      isShowPopup: false,
+    };
   },
   // proxy.$el.f
 };
